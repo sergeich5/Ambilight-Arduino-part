@@ -1,10 +1,10 @@
-# Ambilight-Arduino-part
-
-This software part installs on your Arduino UNO and works with [Ambilight for MacOS](https://github.com/sergeich5/Ambilight-MacOS)
-
 <p align="center">
 	<img src="http://content.arduino.cc/brand/arduino-color.svg" width="50%" />
 </p>
+
+# Ambilight-Arduino-part
+
+This software part installs on your Arduino UNO and works with [Ambilight for MacOS](https://github.com/sergeich5/Ambilight-MacOS)
 
 # Before use
 
