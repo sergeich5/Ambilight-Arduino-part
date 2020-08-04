@@ -22,7 +22,7 @@ Add Library to the project
  Sketch -> Include library -> FastLED
 ```
 
-# Connect Led strip light
+# Connection scheme
 
 Led strip uses much power so that's why it's impossible to user the same power Arduino uses. U need to connect another power supply (for exmaple, use one more usb cables (<b>without data connection!!!</b>))
 
