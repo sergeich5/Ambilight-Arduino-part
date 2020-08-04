@@ -24,4 +24,6 @@ Add Library to the project
 
 # Connect Led strip light
 
+Led strip uses much power so that's why it's impossible to user the same power Arduino uses. U need to connect another power supply (for exmaple, use one more usb cables (<b>without data connection!!!</b>))
+
 <img src="https://github.com/sergeich5/Ambilight-Arduino-part/blob/master/Arduino%20scheme.jpg?raw=true" width="100%" />
