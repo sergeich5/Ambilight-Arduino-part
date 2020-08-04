@@ -6,6 +6,12 @@
 
 This software part installs on your Arduino UNO and works with [Ambilight for MacOS](https://github.com/sergeich5/Ambilight-MacOS)
 
+# Ambilight?
+
+Ambilight (Ambient Lighting Technology) is a background lighting technology for televisions that was invented and patented by Philips Electronics.
+
+<p align="center"><img src="http://app.shopsline.ru/img-pic/kf/Hf3e4eb92d8c64b29bbdbb7538dbdf9c6I/DIY-Ambilight-RGB-5050.jpg_q50.jpg" width="50%" /></p>
+
 # Before use
 
 <b>Install FastLED library in your Arduino IDE</b>
