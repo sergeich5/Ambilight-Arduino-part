@@ -13,7 +13,7 @@ This software part installs on your Arduino UNO and works with [Ambilight for Ma
 If you don't have FastLED library installed in Arduino IDE
 
 ```Arduino IDE
- Tools -> Manage Libraries -> FastLED -> install (i worked with 3.3.2)
+ Tools -> Manage Libraries -> FastLED -> install (worked with 3.3.2)
 ```
 
 Add Library to the project
