@@ -24,4 +24,4 @@ Add Library to the project
 
 # Connect Led strip light
 
-// TODO
+<img src="https://github.com/sergeich5/Ambilight-Arduino-part/blob/master/Arduino%20scheme.jpg?raw=true" width="100%" />
