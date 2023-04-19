@@ -26,9 +26,12 @@
 #include <dmx.h>
 #include <power_mgt.h>
 
-#include <Thread.h>
-#define NUM_LEDS 60
-#define PIN 13
+#include <Thread.h> // https://github.com/ivanseidel/ArduinoThread
+// if using RGBW Leds: https://github.com/sosiskus/FastLED-with-RGBW-leds
+#define NUM_LEDS 20 // Change to the numbers of addressable LEDs
+#define DATA_PIN 13 // Change to your Data Pin
+#define CHIPSET WS2812B // Change your Chipset to WS2812B WS2812 TM1809 UCS1903B, and so forth
+
 CRGB leds[NUM_LEDS];
 byte buff[NUM_LEDS*3 + 1];
 byte cur_led = 0;
@@ -40,10 +43,10 @@ Thread ledsPrinter = Thread();
 
 void setup() {
   Serial.begin(115200);
-  
-  FastLED.addLeds<WS2811, PIN, GRB>(leds, NUM_LEDS).setCorrection( TypicalLEDStrip ); //.setCorrection( 0xFFAFAF ); //.setCorrection( TypicalLEDStrip )
+  // Change your Chipset to WS2812B WS2812 TM1809 UCS1903B, and so forth
+  FastLED.addLeds<CHIPSET, DATA_PIN, RGB>(leds, NUM_LEDS).setCorrection( TypicalLEDStrip ); //TypicalLEDStrip UncorrectedColor //.setTemperature(WarmFluorescent); //.setCorrection( 0xFFAFAF ); //.setCorrection( TypicalLEDStrip )
   FastLED.setBrightness(1);
-  pinMode(PIN, OUTPUT);
+  pinMode(DATA_PIN, OUTPUT);
 
   ledsPrinter.onRun(ledsPrint);
   ledsPrinter.setInterval(20);
